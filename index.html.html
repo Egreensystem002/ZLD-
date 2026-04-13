@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E Green System | Zero Liquid Discharge Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary: #0b3d2e; --accent: #00d084; --light: #f4f7fb; }
+        * { margin:0; padding:0; box-sizing:border-box; font-family: 'Poppins', sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { background: #f4f7fb; color: #333; }
+
+        header {
+            position: fixed; top: 0; width: 100%; background: var(--primary);
+            padding: 15px 5%; display: flex; justify-content: space-between;
+            align-items: center; z-index: 1000; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .logo-box { display: flex; align-items: center; gap: 12px; text-decoration: none; color: white; }
+        .logo-box img { height: 50px; }
+        nav a { color: white; margin-left: 20px; text-decoration: none; font-size: 0.9rem; }
+
+        section { min-height: 100vh; width: 100%; padding: 120px 10% 60px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+
+        #home {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('hero-bg.jpg') center/cover no-repeat;
+            color: white;
+        }
+        .hero-icon { width: 150px; margin-bottom: 20px; }
+        h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .btn { padding: 15px 40px; background: var(--accent); color: white; text-decoration: none; border-radius: 50px; font-weight: 700; margin-top: 25px; display: inline-block; }
+
+        .video-box { width: 100%; max-width: 850px; border-radius: 20px; overflow: hidden; border: 6px solid white; background: #000; box-shadow: 0 15px 40px rgba(0,0,0,0.2); }
+        video { width: 100%; display: block; }
+
+        .contact-card { background: var(--primary); color: white; padding: 60px; border-radius: 30px; width: 100%; max-width: 800px; }
+        .details { margin: 30px 0; font-size: 1.1rem; line-height: 1.8; }
+        .whatsapp { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; padding: 15px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; z-index: 1000; }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#home" class="logo-box">
+        <img src="logo.png" alt="Logo">
+        <h3>E Green System</h3>
+    </a>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#zld">Technology</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <img src="icon.png" alt="ZLD Icon" class="hero-icon">
+    <h1>Zero Liquid Discharge</h1>
+    <p style="font-size: 1.3rem;">Leading the Way in Industrial Wastewater Sustainability</p>
+    <a href="#zld" class="btn">View Demonstration</a>
+</section>
+
+<section id="zld" style="background: white;">
+    <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 30px;">ZLD Process Animation</h2>
+    <div class="video-box">
+        <video controls>
+            <source src="ZLD.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="contact-card">
+        <h2>Expert Consultation</h2>
+        <div class="details">
+            <p><strong>Registered Office:</strong></p>
+            <p>FIRST FLOOR, 1065, SVH METRO STREET,<br>SECTOR 83, GURUGRAM, 122004</p>
+            <p style="margin-top: 20px;">📞 +91 9971320973 | 📧 info@egreensystem.com</p>
+        </div>
+        <a href="tel:+919971320973" class="btn">Call Us Now</a>
+    </div>
+</section>
+
+<a href="https://wa.me/919971320973" class="whatsapp" target="_blank">WhatsApp Chat</a>
+
+</body>
+</html>
